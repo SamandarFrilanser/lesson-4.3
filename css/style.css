@@ -16,7 +16,7 @@ body {
     font-weight: 700;
 }
 #center-section{
-    width: 40%;
+    width: 54%;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -25,44 +25,58 @@ body {
     height: auto;
     padding: 2rem;
     border-radius: 10px;
+    display: flex;
 }
-.input-area input{
-    width: 74%;
-    border: none;
-    outline: none;
-    height: 40px;
-    border-bottom: 2px solid #b4b4b4;
-    padding-left: 0.5rem;
-    transition: border 0.2s ease;
+.center-desc{
+    margin-right: 4rem;
 }
-input:focus{border-color: #444;}
-input::placeholder{
-    font-weight: 800;
-    color: #afafaf;
+.last-desc{
+    display: none;
 }
-.input-area button{
-    width: 22%;
+.center-items{
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+.center-items span{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #ddd;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+.center-items strong{
+    font-size: 18px;
+    color: #b1aeae;
+}
+.title_btn{
+    width: 200px;
+    margin-top: 1.5rem;
     margin-left: 3%;
-    padding: 0.6rem 0.8rem;
+    padding: 1rem 0.8rem;
     outline: none;
     border: none;
     border-radius: 5px;
     font-weight: 700;
     color: #313131;
+    font-size: 17px;
 }
-.desc-item{
-    list-style: none;
-    margin-top: 2rem;
+.title_btn-2{
+    opacity: 0;
+}
+.submit-blog .title{
+    font-size: 17px;
+    color: #333;
+}
+.change-group{
     display: flex;
-    margin-bottom: 2rem;
 }
-.text-items:not(:last-child){
-    margin-right: 2rem;
+.count.active{
+    background-color: #024ead;
 }
-
-.text-items span{
-    color: #afaeae;
-}
-.text-items span.active{
-    color: #000000;
+.desc.active{
+    color: #333;
 }
